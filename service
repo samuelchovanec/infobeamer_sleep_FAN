@@ -3,9 +3,12 @@ import time
 import sys
 import pytz
 from datetime import datetime
-from hosted import config, device
+from hosted import config, device, node, config
 
 config.restart_on_update()
+
+device.gpio.set_pin_value(26, high=True)
+device.gpio.setup_pin(26, direction="out")
 
 timezone = config.timezone
 if timezone == "device":

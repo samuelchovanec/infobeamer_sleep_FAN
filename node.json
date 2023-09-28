@@ -1,5 +1,8 @@
 {
     "name": "Power Saver",
+    "permissions": {
+        "gpio": "Access GPIO"
+      },
     "optional": [
         "COPYRIGHT",
         ".*md$",

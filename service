@@ -9,8 +9,7 @@ config.restart_on_update()
 
 device.gpio.set_pin_value(26, high=True)
 device.gpio.setup_pin(26, direction="out")
-device.gpio.set_pin_value(19, high=True)
-device.gpio.setup_pin(19, direction="out")
+
 
 timezone = config.timezone
 if timezone == "device":
